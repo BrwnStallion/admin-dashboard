@@ -58,6 +58,8 @@ a {
     --clrFontBlack: rgb(0 0 0);
     --clrFontGray: rgb(99 99 99);
     /* Sizes */
+    --gapSidebar01: 3rem;
+    --gapSidebar02: 1rem;
 }
 
 /* ------------------------------ Styles ------------------------------------ */
@@ -82,9 +84,33 @@ body {
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
+    padding: 1rem;
 
     background-color: var(--clrBkgrdBlue);
     color: var(--clrFontWhite);
+
+    display: grid;
+    grid-template-rows: auto;
+    align-content: start;
+    gap: var(--gapSidebar01);
+
+    & .branding {
+        font-size: 2rem;
+    }
+
+    & .navigation {
+        font-size: 1.5rem;
+        
+        display: grid;
+        grid-template-rows: auto;
+        align-content: start;
+        gap: var(--gapSidebar01);
+
+        & ul {
+            display: grid;
+            gap: 1rem;
+        }
+    }
 }
 
 .main-content {
