@@ -53,6 +53,8 @@ a {
     --clrBkgrdBlue: rgb(25 146 212);
     --clrBkgrdGray: rgb(226 232 240);
     --clrBkgrdWhite: rgb(255 255 255);
+    --clrFilterWhite: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg)
+        brightness(103%) contrast(101%);
     --clrCardAccent: rgb(240 180 41);
     --clrFontWhite: rgb(255 255 255);
     --clrFontBlack: rgb(0 0 0);
@@ -60,6 +62,8 @@ a {
     /* Sizes */
     --gapSidebar01: 3rem;
     --gapSidebar02: 1rem;
+    --fontLarge01: 2rem;
+    --fontLarge02: 1.5rem;
 }
 
 /* ------------------------------ Styles ------------------------------------ */
@@ -95,11 +99,16 @@ body {
     gap: var(--gapSidebar01);
 
     & .branding {
-        font-size: 2rem;
+        font-size: var(--fontLarge01);
+
+        & img {
+            height: var(--fontLarge01);
+            filter: var(--clrFilterWhite);
+        }
     }
 
     & .navigation {
-        font-size: 1.5rem;
+        font-size: var(--fontLarge02);
         
         display: grid;
         grid-template-rows: auto;
@@ -109,6 +118,11 @@ body {
         & ul {
             display: grid;
             gap: 1rem;
+        }
+
+        & img {
+            height: var(--fontLarge02);
+            filter: var(--clrFilterWhite);
         }
     }
 }
