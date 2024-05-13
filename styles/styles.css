@@ -11,6 +11,7 @@
     /* Colors */
     --clrBkgrdBlue: rgb(25 146 212);
     --clrBkgrdGray: rgb(226 232 240);
+    --clrBkgrdWhite: rgb(255 255 255);
     --clrCardAccent: rgb(240 180 41);
     --clrFontWhite: rgb(255 255 255);
     --clrFontBlack: rgb(0 0 0);
@@ -27,12 +28,20 @@ body {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+
+    background-color: var(--clrBkgrdWhite);
+    color: var(--clrFontBlack);
 }
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
+
+    background-color: var(--clrBkgrdBlue);
+    color: var(--clrFontWhite);
 }
 
 .main-content {
     grid-area: 2 / 2 / 3 / 3;
+
+    background-color: var(--clrBkgrdGray);;
 }
