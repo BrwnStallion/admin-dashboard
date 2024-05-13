@@ -9,7 +9,12 @@
     /* Fonts */
 
     /* Colors */
-
+    --clrBkgrdBlue: rgb(25 146 212);
+    --clrBkgrdGray: rgb(226 232 240);
+    --clrCardAccent: rgb(240 180 41);
+    --clrFontWhite: rgb(255 255 255);
+    --clrFontBlack: rgb(0 0 0);
+    --clrFontGray: rgb(99 99 99);
     /* Sizes */
 }
 
