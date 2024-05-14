@@ -60,6 +60,7 @@ a {
     --clrFontBlack: rgb(0 0 0);
     --clrFontGray: rgb(99 99 99);
     /* Sizes */
+    --colMinWidth01: 12rem;
     --gapSidebar01: 3rem;
     --gapStd01: 1rem;
     --paddingStd01: 1rem;
@@ -224,6 +225,7 @@ img {
 
             display: grid;
             grid-template-rows: repeat(3, minmax(5rem, 1fr));
+            grid-template-columns: minmax(var(--colMinWidth01), 1fr);
             gap: 1rem;
 
             & .title {
@@ -240,13 +242,22 @@ img {
 
     & .trending {
 
-        & .profile-name {
-            font-size: var(--fontSmall01);
-        }
+        & .trending-profiles {
+            background-color: var(--clrBkgrdWhite);
+            padding: var(--paddingStd01);
+            
+            display: grid;
+            grid-template-rows: repeat(4, minmax(4rem, 1fr));
+            grid-template-columns: minmax(var(--colMinWidth01), 1fr);
 
-        & .description {
-            color: var(--clrFontGray);
-            font-size: var(--fontSmall01);
+            & .profile-name {
+                font-size: var(--fontSmall01);
+            }
+    
+            & .description {
+                color: var(--clrFontGray);
+                font-size: var(--fontSmall01);
+            }
         }
     }
 }
