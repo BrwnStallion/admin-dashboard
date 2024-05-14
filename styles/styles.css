@@ -86,7 +86,7 @@ body {
     font-size: var(--fontLarge01);
 
     display: grid;
-    grid-template: 1fr 5fr / minmax(14ch, 1fr) 4fr;
+    grid-template: auto auto / minmax(14ch, 1fr) 4fr;
 }
 
 img {
@@ -120,7 +120,8 @@ img {
 
     & .header-main {
         display: grid;
-        grid-template: 1fr 3fr / 1fr 5fr 4fr;
+        grid-template: 1fr 2fr / 1fr 5fr 2fr;
+        align-items: center;
 
         & img {
             grid-area: 1 / 1 / 3 / 2;
@@ -134,7 +135,6 @@ img {
 
         & p:last-of-type {
             grid-area: 2 / 2 / 3 / 3;
-            /* align-self: start; */
 
             font-size: var(--fontLarge02);
         }
