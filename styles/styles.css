@@ -76,7 +76,7 @@ body {
     min-height: 100%;
     
     display: grid;
-    grid-template: 1fr 5fr / 1fr 4fr;
+    grid-template: 1fr 5fr / minmax(230px, 1fr) 4fr;
 }
 
 .header {
@@ -97,6 +97,11 @@ body {
     grid-template-rows: auto;
     align-content: start;
     gap: var(--gapSidebar01);
+
+    & img {
+        /* Margin for all images */
+        margin-right: 0.8rem;
+    }
 
     & .branding {
         font-size: var(--fontLarge01);
