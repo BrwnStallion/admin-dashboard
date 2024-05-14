@@ -217,8 +217,11 @@ img {
     }
 
     & .announcements {
+        display: flex;
+        flex-direction: column;
 
         & .announcement-info {
+            flex-grow: 1;
 
             background-color: var(--clrBkgrdWhite);
             padding: var(--paddingStd01);
@@ -241,8 +244,12 @@ img {
     }
 
     & .trending {
+        display: flex;
+        flex-direction: column;
 
         & .trending-profiles {
+            flex-grow: 1;
+            
             background-color: var(--clrBkgrdWhite);
             padding: var(--paddingStd01);
             
