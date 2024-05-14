@@ -173,14 +173,24 @@ img {
 
     & .project-cards {
         
-        & .title {
-            font-size: var(--fontMedium);
-            font-weight: bold;
-        }
+        & .card {
+            
+            & .title {
+                font-size: var(--fontMedium);
+                font-weight: bold;
+            }
 
-        & .preview {
-            color: var(--clrFontGray);
-            font-size: var(--fontSmall01);
+            & .preview {
+                color: var(--clrFontGray);
+                font-size: var(--fontSmall01);
+            }
+
+            & .actions {
+
+                & img {
+                    height: var(--fontLarge02);
+                }
+            }
         }
     }
 
