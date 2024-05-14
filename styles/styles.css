@@ -120,7 +120,7 @@ img {
 
     & .header-main {
         display: grid;
-        grid-template: 1fr 2fr / 1fr 5fr 2fr;
+        grid-template: auto auto / 1fr 5fr 2fr;
         align-items: center;
 
         & img {
@@ -129,12 +129,14 @@ img {
 
         & p:first-of-type {
             grid-area: 1 / 2 / 2 / 3;
+            align-self: end;
 
             font-size: var(--fontSmall01);
         }
 
         & p:last-of-type {
             grid-area: 2 / 2 / 3 / 3;
+            align-self: start;
 
             font-size: var(--fontLarge02);
         }
