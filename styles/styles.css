@@ -75,8 +75,9 @@ html {
 body {
     min-height: 100%;
     
+    font-size: var(--fontLarge01);
     display: grid;
-    grid-template: 1fr 5fr / minmax(230px, 1fr) 4fr;
+    grid-template: 1fr 5fr / minmax(14ch, 1fr) 4fr;
 }
 
 .header {
