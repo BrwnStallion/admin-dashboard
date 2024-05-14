@@ -64,6 +64,9 @@ a {
     --gapSidebar02: 1rem;
     --fontLarge01: 2rem;
     --fontLarge02: 1.5rem;
+    --fontMedium: 1rem;
+    --fontSmall01: 0.8rem;
+    --fontSmall02: 0.5rem;
 }
 
 /* ------------------------------ Styles ------------------------------------ */
@@ -85,6 +88,25 @@ body {
 
     background-color: var(--clrBkgrdWhite);
     color: var(--clrFontBlack);
+    font-size: var(--fontMedium);
+
+    & .header-general {
+        
+        & .profile-name {
+            
+        }
+    }
+
+    & .header-main {
+
+        & p:first-of-type {
+            font-size: var(--fontSmall01);
+        }
+
+        & p:last-of-type {
+            font-size: var(--fontLarge02);
+        }
+    }
 }
 
 .sidebar {
