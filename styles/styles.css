@@ -83,6 +83,11 @@ body {
     grid-template: 1fr 5fr / minmax(14ch, 1fr) 4fr;
 }
 
+img {
+    /* consistent alt-text font size */
+    font-size: 1rem;
+}
+
 .header {
     grid-area: 1 / 2 / 2 / 3;
 
@@ -159,4 +164,48 @@ body {
     grid-area: 2 / 2 / 3 / 3;
 
     background-color: var(--clrBkgrdGray);;
+
+    & > div > .title {
+        /* styles for each section's title */
+        font-size: var(--fontLarge01);
+        font-weight: bold;
+    }
+
+    & .project-cards {
+        
+        & .title {
+            font-size: var(--fontMedium);
+            font-weight: bold;
+        }
+
+        & .preview {
+            color: var(--clrFontGray);
+            font-size: var(--fontSmall01);
+        }
+    }
+
+    & .announcements {
+
+        & .title {
+            font-size: var(--fontSmall01);
+            font-weight: bold;
+        }
+
+        & .preview {
+            color: var(--clrFontGray);
+            font-size: var(--fontSmall02);
+        }
+    }
+
+    & .trending {
+
+        & .profile-name {
+            font-size: var(--fontSmall01);
+        }
+
+        & .description {
+            color: var(--clrFontGray);
+            font-size: var(--fontSmall01);
+        }
+    }
 }
