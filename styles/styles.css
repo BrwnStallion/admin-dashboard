@@ -81,8 +81,8 @@ html {
 
 body {
     min-height: 100%;
-    
     font-size: var(--fontLarge01);
+
     display: grid;
     grid-template: 1fr 5fr / minmax(14ch, 1fr) 4fr;
 }
@@ -123,10 +123,10 @@ img {
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
-    padding: var(--paddingStd01);
-
+    
     background-color: var(--clrBkgrdBlue);
     color: var(--clrFontWhite);
+    padding: var(--paddingStd01);
 
     display: grid;
     grid-template-rows: auto;
@@ -179,9 +179,10 @@ img {
 
     /* repeated styles for each section's title */
     & > div > .title {
+        margin-bottom: var(--paddingStd01);
+
         font-size: var(--fontLarge02);
         font-weight: bold;
-        margin-bottom: var(--paddingStd01);
     }
 
     /* repeated styles for each section's background */
@@ -212,6 +213,7 @@ img {
 
                 & .title {
                     margin-bottom: var(--paddingSmall01);
+                    
                     font-size: var(--fontMedium);
                     font-weight: bold;
                 }
