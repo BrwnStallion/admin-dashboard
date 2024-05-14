@@ -56,6 +56,7 @@ a {
     --clrFilterWhite: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg)
         brightness(103%) contrast(101%);
     --clrCardAccent: rgb(240 180 41);
+    --clrShadow: rgb(205 210 217);
     --clrFontWhite: rgb(255 255 255);
     --clrFontBlack: rgb(0 0 0);
     --clrFontGray: rgb(99 99 99);
@@ -172,19 +173,26 @@ img {
     grid-template: 1fr 1fr / 3fr 1fr;
     gap: var(--gapStd01);
 
+    /* repeated styles for each section's title */
     & > div > .title {
-        /* styles for each section's title */
         font-size: var(--fontLarge02);
         font-weight: bold;
         margin-bottom: var(--paddingStd01);
+    }
+
+    /* repeated styles for each section's background */
+    & .card,
+    & .announcement-info,
+    & .trending-profiles {
+        box-shadow: 3px 3px 5px var(--clrShadow);
+        border-radius: 8px;
+        background-color: var(--clrBkgrdWhite);
     }
 
     & .projects {
         grid-area: 1 / 1 / 3 / 2;
 
         & .project-cards {
-    
-            
             display: grid;
             grid-template: repeat(3, minmax(10rem, 1fr)) / 
             repeat(auto-fill, minmax(18rem, 1fr));
@@ -192,8 +200,7 @@ img {
             gap: 1rem;
             
             & .card {
-                
-                background-color: var(--clrBkgrdWhite);
+                border-left: solid 8px var(--clrCardAccent);
                 padding: var(--paddingStd01);
 
                 & .title {
