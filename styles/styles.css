@@ -65,6 +65,7 @@ a {
     --gapSidebar01: 3rem;
     --gapStd01: 1rem;
     --paddingStd01: 1rem;
+    --paddingSmall01: 0.5rem;
     --fontLarge01: 2rem;
     --fontLarge02: 1.5rem;
     --fontMedium: 1rem;
@@ -206,7 +207,11 @@ img {
                 border-left: solid 8px var(--clrCardAccent);
                 padding: var(--paddingStd01);
 
+                display: flex;
+                flex-direction: column;
+
                 & .title {
+                    margin-bottom: var(--paddingSmall01);
                     font-size: var(--fontMedium);
                     font-weight: bold;
                 }
@@ -217,7 +222,9 @@ img {
                 }
     
                 & .actions {
-    
+                    margin-top: auto;
+                    align-self: flex-end;
+
                     & img {
                         height: var(--fontLarge02);
                     }
