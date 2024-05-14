@@ -102,21 +102,43 @@ img {
     color: var(--clrFontBlack);
     font-size: var(--fontMedium);
 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
     & .header-general {
-        
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr 1fr 3fr;
+        gap: var(--gapStd01);
+        align-items: center;
+
         & .profile-name {
-            
+            font-weight: bold;
         }
     }
 
     & .header-main {
+        display: grid;
+        grid-template: 1fr 3fr / 1fr 5fr 4fr;
+
+        & img {
+            grid-area: 1 / 1 / 3 / 2;
+        }
 
         & p:first-of-type {
+            grid-area: 1 / 2 / 2 / 3;
+
             font-size: var(--fontSmall01);
         }
 
         & p:last-of-type {
+            grid-area: 2 / 2 / 3 / 3;
+            /* align-self: start; */
+
             font-size: var(--fontLarge02);
+        }
+
+        & .main-actions {
+            grid-area: 1 / 3 / 3 / 4;
         }
     }
 }
