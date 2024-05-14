@@ -93,7 +93,10 @@ img {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    /* z-index necessary for shadow to show on top of main-content section */
+    z-index: 0;
 
+    box-shadow: 0px 3px 5px var(--clrShadow);
     background-color: var(--clrBkgrdWhite);
     color: var(--clrFontBlack);
     font-size: var(--fontMedium);
