@@ -139,6 +139,12 @@ img {
 
         & .main-actions {
             grid-area: 1 / 3 / 3 / 4;
+            margin-right: 3rem;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: var(--gapStd01);
         }
     }
 }
