@@ -133,6 +133,11 @@ img {
         background-size: 700%;
         background-position: 70% 21%;
         cursor: pointer;
+
+        /* Style for when user hovers over link */
+        &:hover {
+            border: 2px solid var(--clrSearchBrdr);
+        }
     }
 
     /* Styles for top row of header section */
@@ -184,6 +189,14 @@ img {
             /* padding so that the link region is larger */
             padding: 0.5rem 0rem;
             cursor: pointer;
+
+            /* Style for when user hovers over link */
+            &:hover {
+                /* Underline instead of bold because bold changes positions of
+                other things since rows and cols are 'auto', and position
+                determined by distance from right edge */
+                text-decoration: underline;
+            }
         }
     }
 
@@ -309,6 +322,11 @@ img {
                 & img {
                     height: var(--fontLarge02);
                     filter: var(--clrFilterWhite);
+                }
+
+                /* Styles for when mouse passes over link */
+                &:hover {
+                    font-weight: bold;
                 }
             }
         }
