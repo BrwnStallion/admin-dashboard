@@ -76,8 +76,7 @@ a {
     --fontLarge02: 1.5rem;
     --fontMedium: 1.2rem;
     --fontSmall01: 1.0rem;
-    --fontSmallBtn: 0.9rem;
-    --fontSmall02: 0.8rem;
+    --fontSmall02: 0.9rem;
 }
 
 @font-face {
@@ -255,7 +254,7 @@ img {
                 color: var(--clrFontWhite);
                 padding: 0.5rem 1.2rem;
                 font-family: inherit;
-                font-size: var(--fontSmallBtn);
+                font-size: var(--fontSmall02);
                 font-weight: bold;
 
                 &:hover {
@@ -384,12 +383,17 @@ img {
                     
                     font-size: var(--fontMedium);
                     font-weight: bold;
-                    cursor: pointer;
                 }
     
                 & .preview {
                     color: var(--clrFontGray);
                     font-size: var(--fontSmall01);
+                }
+
+                /* Style for entire card text content to show it's a link */
+                & .title,
+                & .preview {
+                    cursor: pointer;
                 }
     
                 & .actions {
@@ -442,6 +446,12 @@ img {
                 & .preview {
                     color: var(--clrFontGray);
                     font-size: var(--fontSmall02);
+                }
+
+                /* styles for entire announcement text content to show link */
+                & .title,
+                & .preview {
+                    cursor: pointer;
                 }
             }
         }
