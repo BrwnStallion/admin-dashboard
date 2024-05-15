@@ -383,6 +383,7 @@ img {
                     
                     font-size: var(--fontMedium);
                     font-weight: bold;
+                    cursor: pointer;
                 }
     
                 & .preview {
@@ -396,6 +397,12 @@ img {
 
                     & img {
                         height: var(--fontLarge02);
+                        cursor: pointer;
+
+                        /* Style for when user hovers over link */
+                        &:hover {
+                            box-shadow: 0px 2px var(--clrCardAccent);
+                        }
                     }
                 }
             }
