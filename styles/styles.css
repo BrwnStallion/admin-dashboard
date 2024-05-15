@@ -67,6 +67,7 @@ a {
     --colMinWidth01: 12rem;
     --gapSidebar01: 3rem;
     --gapStd01: 1rem;
+    --gapSmall: 0.5rem;
     --paddingStd01: 1rem;
     --paddingStd02: 2rem;
     --paddingSmall01: 0.5rem;
@@ -100,7 +101,7 @@ img {
     grid-area: 1 / 2 / 2 / 3;
     /* z-index necessary for shadow to show on top of main-content section */
     z-index: 0;
-    margin: 0rem var(--paddingStd02);
+    padding: 0rem var(--paddingStd02);
 
     box-shadow: 0px 3px 5px var(--clrShadow);
     background-color: var(--clrBkgrdWhite);
@@ -108,8 +109,8 @@ img {
     font-size: var(--fontMedium);
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--gapStd01);
+    grid-template-rows: auto auto;
+    gap: var(--gapSmall);
 
     & div.profile-pic {
         border-radius: 50%;
@@ -119,8 +120,10 @@ img {
     }
 
     & .header-general {
+        padding-top: var(--paddingSmall01);
+        
         display: grid;
-        grid-template-columns: 1fr 6fr 1fr 1fr 3fr;
+        grid-template-columns: auto minmax(25ch, 75ch) 1fr auto auto;
         gap: var(--gapStd01);
         align-items: center;
 
@@ -130,11 +133,6 @@ img {
             /* bell icon */
             &:nth-of-type(1) {
                 justify-self: end;
-            }
-
-            /* profile picture */
-            &:nth-of-type(2) {
-                justify-self: center;
             }
         }
 
@@ -162,6 +160,7 @@ img {
         }
 
         & .profile-name {
+            padding-right: 4rem;
             font-weight: bold;
         }
     }
