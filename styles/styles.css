@@ -99,6 +99,8 @@ body {
     min-height: 100%;
     font-size: var(--fontLarge01);
     font-family: karla;
+    /* So that all of the non-link text will be default cursor, not I-beam */
+    cursor: default;
 
     display: grid;
     grid-template: auto auto / minmax(14ch, 1fr) 4fr;
@@ -130,6 +132,7 @@ img {
         background-image: url(../img/scotland-mountains.jpg);
         background-size: 700%;
         background-position: 70% 21%;
+        cursor: pointer;
     }
 
     /* Styles for top row of header section */
@@ -144,6 +147,7 @@ img {
         /* Styles for the two icons */
         & img {
             height: 1.3rem;
+            cursor: pointer;
 
             /* bell icon */
             &:nth-of-type(1) {
@@ -176,8 +180,10 @@ img {
         }
 
         & .profile-name {
-            padding-right: var(--paddingStd02);
-            /* font-weight: bold; */
+            margin-right: var(--paddingStd02);
+            /* padding so that the link region is larger */
+            padding: 0.5rem 0rem;
+            cursor: pointer;
         }
     }
 
@@ -259,6 +265,7 @@ img {
     align-content: start;
     gap: var(--gapSidebar01);
 
+    /* Consistent styles for all of the icons */
     & img {
         /* Margin for all images */
         margin-right: 0.8rem;
@@ -266,7 +273,11 @@ img {
 
     & .branding {
         font-size: var(--fontLarge01);
+        font-weight: bold;
+        cursor: pointer;
 
+        display: flex;
+        
         & img {
             height: var(--fontLarge01);
             filter: var(--clrFilterWhite);
@@ -283,13 +294,25 @@ img {
 
         & ul {
             display: grid;
+            /* Defining col width so that the link region is reasonable and
+            matches the longest item ('communities') */
+            grid-template-columns: 13.5ch;
             gap: 1rem;
+
+            & li {
+                cursor: pointer;
+                
+                /* This puts the icons and text on the same line */
+                display: flex;
+
+                /* Styles for all of the nav icons */
+                & img {
+                    height: var(--fontLarge02);
+                    filter: var(--clrFilterWhite);
+                }
+            }
         }
 
-        & img {
-            height: var(--fontLarge02);
-            filter: var(--clrFilterWhite);
-        }
     }
 }
 
