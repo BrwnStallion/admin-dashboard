@@ -383,6 +383,11 @@ img {
                     
                     font-size: var(--fontMedium);
                     font-weight: bold;
+
+                    /* Style to show title as a link when user hovers */
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
     
                 & .preview {
@@ -441,6 +446,11 @@ img {
     
                     font-size: var(--fontSmall01);
                     font-weight: bold;
+
+                    /* Style to show it's a link when user hovers */
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
         
                 & .preview {
