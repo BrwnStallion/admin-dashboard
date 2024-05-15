@@ -59,6 +59,7 @@ a {
         brightness(103%) contrast(101%);
     --clrCardAccent: rgb(240 180 41);
     --clrShadow: rgb(205 210 217);
+    --clrSearchBrdr: rgb(150, 157, 167);
     --clrFontWhite: rgb(255 255 255);
     --clrFontBlack: rgb(0 0 0);
     --clrFontGray: rgb(99 99 99);
@@ -113,6 +114,19 @@ img {
         gap: var(--gapStd01);
         align-items: center;
 
+        & input#search {
+            border-radius: 10px;
+            border: none;
+            background-color: var(--clrBkgrdGray);
+            padding: .1rem 1rem;
+            font-size: inherit;
+
+            &:focus {
+                outline: none;
+                border: 2px solid var(--clrShadow);
+            }
+        }
+
         & .profile-name {
             font-weight: bold;
         }
@@ -158,6 +172,7 @@ img {
                 color: var(--clrFontWhite);
                 padding: 0.5rem 1.4rem;
                 font-weight: bold;
+                font-family: inherit;
 
                 &:hover {
                     background-color: var(--clrBkgrdBlue02);
