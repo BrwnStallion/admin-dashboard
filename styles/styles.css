@@ -481,13 +481,52 @@ img {
             grid-template-rows: repeat(4, minmax(4rem, 1fr));
             grid-template-columns: minmax(var(--colMinWidth01), 1fr);
 
-            & .profile-name {
-                font-size: var(--fontSmall01);
-            }
+            & .profile {
+
+                & div.profile-pic {
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+            
+                    /* Style for when user hovers over link */
+                    &:hover {
+                        border: 2px solid var(--clrSearchBrdr);
+                    }
+
+                    &#barry {
+                        background-image: url(../img/huangshan-mountains.jpg);
+                        background-size: 325%;
+                        background-position: 15% 0%;
+                    }
+
+                    &#patricia {
+                        background-image: url(../img/raven.jpg);
+                        background-size: 225%;
+                        background-position: 70% 5%;
+                    }
+
+                    &#jade {
+                        background-image: url(../img/chick.jpg);
+                        background-size: 200%;
+                        background-position: 57% 0%;
+                    }
+
+                    &#dennis {
+                        background-image: url(../img/orca.png);
+                        background-size: 125%;
+                        background-position: 52% 50%;
+                    }
+                }
     
-            & .description {
-                color: var(--clrFontGray);
-                font-size: var(--fontSmall01);
+                & .profile-name {
+                    font-size: var(--fontSmall01);
+                }
+        
+                & .description {
+                    color: var(--clrFontGray);
+                    font-size: var(--fontSmall01);
+                }
             }
         }
     }
