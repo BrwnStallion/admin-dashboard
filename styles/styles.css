@@ -60,6 +60,7 @@ a {
     --clrCardAccent: rgb(240 180 41);
     --clrShadow: rgb(205 210 217);
     --clrSearchBrdr: rgb(150, 157, 167);
+    --clrAnnounceBrdr: rgb(210 210 210);
     --clrFontWhite: rgb(255 255 255);
     --clrFontBlack: rgb(0 0 0);
     --clrFontGray: rgb(99 99 99);
@@ -417,21 +418,31 @@ img {
             flex-grow: 1;
 
             background-color: var(--clrBkgrdWhite);
-            padding: var(--paddingStd01);
+            padding: var(--paddingStd02);
 
             display: grid;
             grid-template-rows: repeat(3, minmax(5rem, 1fr));
             grid-template-columns: minmax(var(--colMinWidth01), 1fr);
             gap: 1rem;
 
-            & .title {
-                font-size: var(--fontSmall01);
-                font-weight: bold;
-            }
+            & .announcement {
+                
+                /* Selects all announcements that aren't the last one */
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--clrAnnounceBrdr);
+                }
+
+                & .title {
+                    margin-bottom: var(--paddingSmall01);
     
-            & .preview {
-                color: var(--clrFontGray);
-                font-size: var(--fontSmall02);
+                    font-size: var(--fontSmall01);
+                    font-weight: bold;
+                }
+        
+                & .preview {
+                    color: var(--clrFontGray);
+                    font-size: var(--fontSmall02);
+                }
             }
         }
     }
