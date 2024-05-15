@@ -107,6 +107,7 @@ img {
 
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: var(--gapStd01);
 
     & .header-general {
         display: grid;
@@ -114,16 +115,35 @@ img {
         gap: var(--gapStd01);
         align-items: center;
 
+        & img {
+            height: 1.3rem;
+
+            /* search icon */
+            &:first-of-type {
+                justify-self: end;
+            }
+            
+            /* bell icon */
+            &:nth-of-type(2) {
+                justify-self: end;
+            }
+
+            /* profile picture */
+            &:nth-of-type(3) {
+                justify-self: center;
+            }
+        }
+
         & input#search {
             border-radius: 10px;
             border: none;
             background-color: var(--clrBkgrdGray);
-            padding: .1rem 1rem;
+            padding: .2rem 1rem;
             font-size: inherit;
 
             &:focus {
                 outline: none;
-                border: 2px solid var(--clrShadow);
+                border: 2px solid var(--clrSearchBrdr);
             }
         }
 
@@ -133,6 +153,8 @@ img {
     }
 
     & .header-main {
+        margin-bottom: var(--paddingStd01);
+        
         display: grid;
         grid-template: auto auto / 1fr 5fr 2fr;
         align-items: center;
