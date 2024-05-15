@@ -5,11 +5,11 @@ Admin Dashboard Laundry List
   make the nav titles and the branding name all start on the same vertical line
 - Adjust font sizes for main content
 - Add announcement border styles
-- Find/add profile pictures
 - Investigate adding a conditional size to announcement/trending containers
     - So that when I zoom out, the container will at a certain point, stop
       growing to fill the rest of its grid cell
-- Figure out selector for search icon
+- Select and adjust font-family
+- Consider making sidebar not be able to expand beyond what it needs
 
 05/14/24 (main)
 - Add fonts to all the different elements so that it looks okay
@@ -36,6 +36,10 @@ Admin Dashboard Laundry List
 - Investigate adding a conditional size to announcement/trending containers
     - So that when I zoom out, the container will at a certain point, stop
       growing to fill the rest of its grid cell
+- Find/add profile pictures
+    - COMPLETE
+- Figure out selector for search icon
+    - COMPLETE
 
 05/13/24 (main)
 - Initialize all files, directories with standard content
