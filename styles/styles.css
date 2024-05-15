@@ -119,17 +119,17 @@ img {
             height: 1.3rem;
 
             /* search icon */
-            &:first-of-type {
+            label & {
                 justify-self: end;
             }
             
             /* bell icon */
-            &:nth-of-type(2) {
+            &:nth-of-type(1) {
                 justify-self: end;
             }
 
             /* profile picture */
-            &:nth-of-type(3) {
+            &:nth-of-type(2) {
                 justify-self: center;
             }
         }
