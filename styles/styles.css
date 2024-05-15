@@ -73,9 +73,10 @@ a {
     --paddingSmall01: 0.5rem;
     --fontLarge01: 2rem;
     --fontLarge02: 1.5rem;
-    --fontMedium: 1rem;
-    --fontSmall01: 0.8rem;
-    --fontSmall02: 0.5rem;
+    --fontMedium: 1.2rem;
+    --fontSmall01: 1.0rem;
+    --fontSmallBtn: 0.9rem;
+    --fontSmall02: 0.8rem;
 }
 
 @font-face {
@@ -140,6 +141,7 @@ img {
         gap: var(--gapStd01);
         align-items: center;
 
+        /* Styles for the two icons */
         & img {
             height: 1.3rem;
 
@@ -155,7 +157,7 @@ img {
         }
 
         & input#search {
-            border-radius: 10px;
+            border-radius: 14px;
             border: none;
             background-color: var(--clrBkgrdGray);
             padding: .2rem 1rem;
@@ -174,8 +176,8 @@ img {
         }
 
         & .profile-name {
-            padding-right: 4rem;
-            font-weight: bold;
+            padding-right: var(--paddingStd02);
+            /* font-weight: bold; */
         }
     }
 
@@ -203,6 +205,7 @@ img {
             align-self: end;
 
             font-size: var(--fontSmall01);
+            font-weight: bold;
         }
 
         /* username and handle */
@@ -211,6 +214,7 @@ img {
             align-self: start;
 
             font-size: var(--fontLarge02);
+            font-weight: bold;
         }
 
         /* 'new', 'upload', and 'share' */
@@ -224,14 +228,15 @@ img {
             gap: var(--gapStd01);
 
             & button {
-                border-radius: 15px;
+                border-radius: 17px;
                 border: none;
-                min-width: 13ch;
+                min-width: 9ch;
                 background-color: var(--clrBkgrdBlue01);
                 color: var(--clrFontWhite);
-                padding: 0.5rem 1.4rem;
-                font-weight: bold;
+                padding: 0.5rem 1.2rem;
                 font-family: inherit;
+                font-size: var(--fontSmallBtn);
+                font-weight: bold;
 
                 &:hover {
                     background-color: var(--clrBkgrdBlue02);
