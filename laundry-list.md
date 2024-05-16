@@ -3,12 +3,24 @@ Admin Dashboard Laundry List
 05/15/24 (main)
 - Figure out how to align the sidebar logos to be on the same centerline, and
   make the nav titles and the branding name all start on the same vertical line
-- Adjust font sizes for main content
+    - COMPLETE (not gonna get them to start on the same vertical)
 - Add announcement border styles
+    - COMPLETE
+- Select and adjust font-family
+    - COMPLETE
+- Add profile pics for trending section
+    - COMPLETE
+- Add cursor styles to all of the buttons/links
+    - COMPLETE
+- Adjust display formatting for trending to be inline
+    - COMPLETE
 - Investigate adding a conditional size to announcement/trending containers
     - So that when I zoom out, the container will at a certain point, stop
       growing to fill the rest of its grid cell
-- Select and adjust font-family
+    - COMPLETE
+- Adjust font sizes and font weights for everything
+    - Consider making project cards larger. Or add more maybe...?
+    - COMPLETE
 - Consider making sidebar not be able to expand beyond what it needs
 
 05/14/24 (main)
