@@ -67,7 +67,7 @@ a {
     --clrFontGray: rgb(99 99 99);
     /* Sizes */
     --colMinWidth01: 12rem;
-    --gapSidebar01: 3rem;
+    --gapSidebar01: 2.5rem;
     --gapStd01: 1rem;
     --gapSmall: 0.5rem;
     --gapTiny: 0.2rem;
@@ -290,7 +290,8 @@ img {
     }
 
     & .branding {
-        margin: var(--paddingStd01);
+        margin-left: var(--paddingStd01);
+        margin-top: var(--paddingStd01);
         
         font-size: var(--fontLarge01);
         font-weight: bold;
@@ -316,7 +317,7 @@ img {
             display: grid;
 
             & li {
-                padding: 0.8rem 0rem 0.8rem var(--paddingStd01);
+                padding: 0.5rem 0rem 0.5rem var(--paddingStd01);
                 cursor: pointer;
                 
                 /* This puts the icons and text on the same line */
