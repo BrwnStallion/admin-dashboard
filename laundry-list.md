@@ -22,6 +22,9 @@ Admin Dashboard Laundry List
     - Consider making project cards larger. Or add more maybe...?
     - COMPLETE
 - Consider making sidebar not be able to expand beyond what it needs
+    - COMPLETE
+- Add focus border to cards
+    - COMPLETE
 
 05/14/24 (main)
 - Add fonts to all the different elements so that it looks okay
