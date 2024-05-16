@@ -104,7 +104,7 @@ body {
     cursor: default;
 
     display: grid;
-    grid-template: auto auto / minmax(14ch, 1fr) 4fr;
+    grid-template: auto auto / 14ch 4fr;
 }
 
 img {
