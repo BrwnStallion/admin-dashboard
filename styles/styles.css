@@ -277,7 +277,6 @@ img {
     
     background-color: var(--clrBkgrdBlue01);
     color: var(--clrFontWhite);
-    padding: var(--paddingStd01);
 
     display: grid;
     grid-template-rows: auto;
@@ -291,6 +290,8 @@ img {
     }
 
     & .branding {
+        margin: var(--paddingStd01);
+        
         font-size: var(--fontLarge01);
         font-weight: bold;
         cursor: pointer;
@@ -313,12 +314,9 @@ img {
 
         & ul {
             display: grid;
-            /* Defining col width so that the link region is reasonable and
-            matches the longest item ('communities') */
-            grid-template-columns: 13.5ch;
-            gap: 1rem;
 
             & li {
+                padding: 0.8rem 0rem 0.8rem var(--paddingStd01);
                 cursor: pointer;
                 
                 /* This puts the icons and text on the same line */
@@ -332,6 +330,7 @@ img {
 
                 /* Styles for when mouse passes over link */
                 &:hover {
+                    background-color: var(--clrBkgrdBlue02);
                     font-weight: bold;
                 }
             }
