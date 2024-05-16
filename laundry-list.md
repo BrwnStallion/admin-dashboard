@@ -25,6 +25,8 @@ Admin Dashboard Laundry List
     - COMPLETE
 - Add focus border to cards
     - COMPLETE
+- Add line color change to sidebar hover style
+    - COMPLETE
 
 05/14/24 (main)
 - Add fonts to all the different elements so that it looks okay
