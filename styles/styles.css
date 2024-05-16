@@ -59,6 +59,7 @@ a {
         brightness(103%) contrast(101%);
     --clrCardAccent: rgb(240 180 41);
     --clrShadow: rgb(205 210 217);
+    --clrDarkShadow: rgb(140, 143, 148);
     --clrSearchBrdr: rgb(150, 157, 167);
     --clrAnnounceBrdr: rgb(210 210 210);
     --clrFontWhite: rgb(255 255 255);
@@ -382,6 +383,11 @@ img {
 
                 display: flex;
                 flex-direction: column;
+
+                /* Style to show user is hovering over a card */
+                &:hover {
+                    box-shadow: 3px 3px 7px var(--clrDarkShadow);
+                }
 
                 & .title {
                     margin-bottom: var(--paddingSmall01);
