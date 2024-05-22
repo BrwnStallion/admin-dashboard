@@ -373,7 +373,7 @@ img {
         & .project-cards {
             display: grid;
             grid-template: repeat(3, minmax(12rem, 1fr)) / 
-            repeat(auto-fill, minmax(20rem, 1fr));
+            repeat(auto-fit, minmax(20rem, 1fr));
             grid-auto-rows: minmax(10rem, 1fr);
             gap: 1rem;
             
